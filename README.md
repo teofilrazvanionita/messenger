@@ -1,1 +1,1 @@
-# messenger
+# internet messenger server and client app.
