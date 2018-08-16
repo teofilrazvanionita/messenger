@@ -3,6 +3,7 @@ CREATE TABLE messages (
 	  Destination VARCHAR(20) NOT NULL,
 	  Sender VARCHAR(20) NOT NULL,
 	  Message VARCHAR(1024) NOT NULL,
+	  When TIMESTAMP,
 	  PRIMARY KEY (ID),
 	  FOREIGN KEY (Destination)
 	    REFERENCES users(Username),
