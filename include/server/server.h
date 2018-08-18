@@ -3,6 +3,7 @@
 
 #define PORT 6666
 
+#include "crypto.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -25,7 +26,7 @@ class SERVER {
 		~SERVER ();
 		void Start();
 	private:
-
+                CRYPTO cryptinfo;
 };
 
 void client_Communication (SERVER *server_p, int sockfd);
